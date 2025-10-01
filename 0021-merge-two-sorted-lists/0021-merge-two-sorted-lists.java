@@ -32,7 +32,7 @@ class Solution {
             }
             if (list1ptr>50 || list2ptr>50) break;
 
-            if (list1.val< list2.val){
+            if (list1.val<=list2.val){
                 tail.next= new ListNode(list1.val);
                 list1= list1.next;
                 tail= tail.next;
@@ -44,12 +44,14 @@ class Solution {
                 tail= tail.next;
                 list2ptr++;
             }
-            else if(list1.val==list2.val){
+            /*
+            else if(list1.val<=list2.val){
                 tail.next= new ListNode(list1.val);
                 tail= tail.next;
                 list1= list1.next;
                 list1ptr++;
             }
+            */
         }
 
         while(list1 !=null){

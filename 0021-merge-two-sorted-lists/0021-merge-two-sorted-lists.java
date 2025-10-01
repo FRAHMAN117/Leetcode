@@ -44,14 +44,6 @@ class Solution {
                 tail= tail.next;
                 list2ptr++;
             }
-            /*
-            else if(list1.val<=list2.val){
-                tail.next= new ListNode(list1.val);
-                tail= tail.next;
-                list1= list1.next;
-                list1ptr++;
-            }
-            */
         }
 
         while(list1 !=null){
